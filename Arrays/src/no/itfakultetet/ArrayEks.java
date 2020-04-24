@@ -16,11 +16,11 @@ public class ArrayEks {
 			System.out.println(tall[i]);
 		}
 		System.out.println("------------");
-
-		// Skriv ut med forbedret for-løkke
 		System.out.println("Med forbedret for-løkke");
+		// Skriv ut med forbedret for-løkke
 		for (int i : tall) {
 			System.out.println(i);
+
 		}
 		System.out.println("------------");
 
@@ -29,13 +29,30 @@ public class ArrayEks {
 		Arrays.stream(tall).forEach(System.out::println);
 		System.out.println("------------");
 
-		// Gange hvert tall med 2 og skrive ut resultatet
+		// Gange hvert tall med 2, sortere synkende og skrive ut resultatet
 		System.out.println("Hvert tall ganger 2, sortert i synkende rekkefølge og skrevet ut med map() og forEach()");
 		Arrays.stream(tall).sorted(Comparator.reverseOrder()).map(x -> x * 2).forEach(System.out::println);
 		System.out.println("------------");
 
+		// Finn største og minste verdien i et array
+		// Største verdi med Arrays.stream()
+		int max = Arrays.stream(tall).max(Comparator.naturalOrder()).get();
+		System.out.println("Høyeste  tall: "+max);
+		System.out.println("------------");
+
+		// Minste verdi med for-løkke:
+		int min = tall[0];  // min = første tall i arrayet
+		for (int i = 0; i < tall.length; i++) {
+			if(tall[i] < min) {   // er neste tall mindre, blir tallet det nye "min"
+				min = tall[i];
+			}
+		}
+		System.out.println("Minste tall: "+ min);
+		System.out.println("------------");
+
+
 		// Array med tekst
-		// Lag et array med new String[<tall>]
+		// Lag et array for tekst-elementer med new String[<tall>]
 		String[] tekst = new String[3];
 
 		tekst[0] = "Dette er tekst 1";
@@ -68,12 +85,17 @@ public class ArrayEks {
 				.println("Skriv bare ut elementer sin inneholder ordet \"ny\" ved bruk av stream().filter().forEach()");
 		Arrays.stream(tekst).filter(a -> a.contains("ny")).forEach(System.out::println);
 
+		System.out.println("------------");
+
+		// Skriv ut antall elementer med Arrays.stream().count();
 		System.out.println("Antall elementer i tekst-Arrayet: "+Arrays.stream(tekst).count());
+		System.out.println("------------");
+
 
 		// Flerdimensjonale Arrays
 		// Tabell med 3 rader og 3 kollonner
 
-		System.out.println();
+
 		String[][] tabell = new String[3][3];
 
 		tabell[0][0] = "Donald";
@@ -146,6 +168,7 @@ public class ArrayEks {
 
 		System.out.println("Antal rader i tabellen: " + Arrays.stream(tabell).count());
 
+		// Skriv ut tabellen - tabulator-separert
 		Arrays.stream(tabell).map(a -> a[0] + "\t" + a[1] + "\t" + a[2]).forEach(System.out::println);
 
 	} // end main

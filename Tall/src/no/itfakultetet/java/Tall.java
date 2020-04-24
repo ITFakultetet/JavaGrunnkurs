@@ -1,5 +1,8 @@
 package no.itfakultetet.java;
 
+import org.apache.commons.math3.util.Precision;
+
+import java.text.DecimalFormat;
 import java.util.Random;
 
 public class Tall {
@@ -23,6 +26,15 @@ public class Tall {
 		System.out.println("Tall1 = " + tall1);
 		System.out.println("Tall1 avrundet til heltall = " + Math.round(tall1));
 		System.out.println("Tall1 avrundet til to desimaler = " + Math.round(tall1 * 100) / 100.0);
+		System.out.println("Tall1 avrundet til tre desimaler med Precision.round() fra apache.commons.math = " + Precision.round(tall1,3));
+		DecimalFormat df = new DecimalFormat("###.##");
+		System.out.println("Tall1 avrundet til to desimaler med DecimalFormat : " + df.format(tall1));
+
+		// Avrunding med egen-laget metode roud() -- se enderst på siden
+
+		System.out.println("round(2.658213349, 4) = "+ round(2.658213349,4));
+		System.out.println("round(17.1783428, 2) = "+ round(17.1783428,2));
+
 
 		System.out.println();
 
@@ -30,6 +42,9 @@ public class Tall {
 		
 		System.out.println("6 i 3 potens: "+ Math.pow(tall2, 3));
 		System.out.println("Kvadratroten av 90: "+ Math.sqrt(90));
+
+
+		// max og min
 		System.out.println("Høyeste tall av "+tall1+" og "+tall2+": "+ Math.max(tall1, tall2));
 		System.out.println("Minste tall av "+tall3+" og "+tall2+": "+ Math.min(tall3, tall2));
 
@@ -53,6 +68,12 @@ public class Tall {
 			System.out.print(new Random().nextInt(6) + 1 + " ");
 		}
 
+	} // end main
+
+
+	// Lag en funksjon for avrunding
+	public static double round(double n,int dec)  { 
+		return Math.round(n*Math.pow(10,dec))/(double)Math.pow(10,dec); 
 	}
 
 }
