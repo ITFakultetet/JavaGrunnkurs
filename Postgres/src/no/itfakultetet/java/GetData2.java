@@ -10,7 +10,7 @@ public class GetData2 {
 
 	public ResultSet getRows() {
   
-		try (Connection connection = DriverManager.getConnection("jdbc:postgresql://s1.itfakultetet.no:5432/terje",
+		try (Connection connection = DriverManager.getConnection("jdbc:postgresql://s1.itfakultetet.no:5432/kurs",
 				"kurs", "kurs123")) {
 
 			Statement statement = connection.createStatement();

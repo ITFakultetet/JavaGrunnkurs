@@ -7,5 +7,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="com.github.jsurfer:jsurfer-jsonsimple:1.5.1" level="project" />
+    <orderEntry type="library" name="org.postgresql:postgresql:42.2.2" level="project" />
   </component>
 </module>

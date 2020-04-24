@@ -40,4 +40,13 @@ private String kjønn;
     public void setKjønn(String kjønn) {
         this.kjønn = kjønn;
     }
+
+    @Override
+    public String toString() {
+        return "{" +
+                "navn='" + navn + '\'' +
+                ", alder=" + alder +
+                ", kjønn='" + kjønn + '\'' +
+                '}';
+    }
 }
