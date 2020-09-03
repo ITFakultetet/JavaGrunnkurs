@@ -1,0 +1,19 @@
+<component name="libraryTable">
+  <library name="commons-codec-1.12">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/PostgresTest/lib/commons-codec-1.12.jar!/" />
+      <root url="jar://$PROJECT_DIR$/PostgresTest/lib/commons-collections4-4.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/PostgresTest/lib/commons-compress-1.18.jar!/" />
+      <root url="jar://$PROJECT_DIR$/PostgresTest/lib/commons-math3-3.6.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/PostgresTest/lib/curvesapi-1.06.jar!/" />
+      <root url="jar://$PROJECT_DIR$/PostgresTest/lib/db2jcc-db2jcc4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/PostgresTest/lib/itextpdf-5.5.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/PostgresTest/lib/poi-4.1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/PostgresTest/lib/poi-ooxml-4.1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/PostgresTest/lib/poi-ooxml-schemas-4.1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/PostgresTest/lib/xmlbeans-3.1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
