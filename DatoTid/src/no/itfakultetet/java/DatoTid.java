@@ -5,14 +5,11 @@ import java.time.Period;
 
 public class DatoTid {
 
-	public int alder(LocalDate birthDate, LocalDate currentDate) {
+    public int alder(LocalDate birthDate, LocalDate currentDate) {
 
-		return Period.between(birthDate, currentDate).getYears();
+        return Period.between(birthDate, currentDate).getYears();
 
-	}
+    }
 
-	
-	
-	
-	
+
 }
