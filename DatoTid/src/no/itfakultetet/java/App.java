@@ -38,13 +38,15 @@ public class App {
         // På norsk
         Locale bokmaal = new Locale("nb", "NO");
         Locale nynorsk = new Locale("nn", "NO");
+        Locale fransk = new Locale("fr", "FR");
 
         String kursstartNB = kursstart.format(DateTimeFormatter.ofPattern("EEEE, dd MMMM, yyyy", bokmaal));
         String kursstartNN = kursstart.format(DateTimeFormatter.ofPattern("EEEE, dd MMMM, yyyy", nynorsk));
+        String kursstartFR = kursstart.format(DateTimeFormatter.ofPattern("EEEE, dd MMMM, yyyy", fransk));
 
-        System.out.println("Kurset starter på : " + kursstartNB);
-        System.out.println("Kurset startar på : " + kursstartNN);
-
+        System.out.println("Bokmål: Kurset starter på : " + kursstartNB);
+        System.out.println("Nynorsk: Kurset startar på : " + kursstartNN);
+        System.out.println("Fransk: Le course commence à: " + kursstartFR);
         // Beregn alder ut fra fødselsdato med Period.between(startDateInclusive,
         // endDateExclusive));
 
