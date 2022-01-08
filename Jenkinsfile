@@ -6,13 +6,7 @@ pipeline {
 
   }
   stages {
-    stage('allocate node') {
-      steps {
-        node(label: 'ubuntu')
-      }
-    }
-
-    stage('push til nexus') {
+      stage('push til nexus') {
       steps {
         archiveArtifacts(allowEmptyArchive: true, artifacts: '*')
       }
