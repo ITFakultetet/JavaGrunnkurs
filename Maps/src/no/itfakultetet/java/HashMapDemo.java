@@ -16,8 +16,8 @@ public class HashMapDemo {
 		map1.put(2, "Nummer 2");
 		map1.put(12, "Nummer 12");
 
-		// Hent verdien til nøkkel 1
-		System.out.println("Verdien til nøkkel 1 er: " + map1.get(1));
+		// Hent verdien til nøkkel 2
+		System.out.println("Verdien til nøkkel 2 er: " + map1.get(2));
 
 		// Print ut toString() for map1
 		System.out.println("\nDette er verdien til map.toString():\n" + map1);
