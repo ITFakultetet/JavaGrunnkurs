@@ -1,6 +1,5 @@
 package no.itfakultetet.java;
 
-import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -21,7 +20,7 @@ public class HashMapDemo {
 		System.out.println("Verdien til nøkkel 1 er: " + map1.get(1));
 
 		// Print ut toString() for map1
-		System.out.println("\nDette er verdien til map.toString():\n" + map1.toString());
+		System.out.println("\nDette er verdien til map.toString():\n" + map1);
 
 		// Print ut et linjeskift
 		System.out.println();
