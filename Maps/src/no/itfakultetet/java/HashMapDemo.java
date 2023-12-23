@@ -45,10 +45,15 @@ public class HashMapDemo {
 
 		System.out.println();
 		// Filtrer ut verdier med stream() og filter()
-		System.out.println("Bruk stream() og filer() til å printe ut nøkkel/verdi-par med verdi som inneholder \"6\" ");
+		System.out.println("Bruk stream() og filter() til å printe ut nøkkel/verdi-par med verdi som inneholder \"6\" ");
 		map1.entrySet().stream().filter(a -> a.getValue().contains("6")).forEach(System.out::println);
 
 		System.out.println();
+
+
+		// Sortere en Map etter nøkkel og printe ut:
+		System.out.println("Sortere en Map etter nøkkel og printe ut");
+		map1.entrySet().stream().sorted(Map.Entry.comparingByKey()).forEach(System.out::println);
 
 		// Sortere en Map etter verdi og printe ut:
 		System.out.println("Sortere en Map etter verdi og printe ut");
