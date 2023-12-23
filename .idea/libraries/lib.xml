@@ -1,7 +1,18 @@
 <component name="libraryTable">
   <library name="lib">
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/PostgresTest/lib/postgresql-42.2.5.jar" />
+      <root url="jar://$PROJECT_DIR$/Brreg/lib/commons-codec-1.12.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Brreg/lib/commons-collections4-4.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Brreg/lib/commons-compress-1.18.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Brreg/lib/commons-math3-3.6.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Brreg/lib/curvesapi-1.06.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Brreg/lib/db2jcc-db2jcc4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Brreg/lib/itextpdf-5.5.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Brreg/lib/poi-4.1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Brreg/lib/poi-ooxml-4.1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Brreg/lib/poi-ooxml-schemas-4.1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Brreg/lib/postgresql-42.7.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Brreg/lib/xmlbeans-3.1.0.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
